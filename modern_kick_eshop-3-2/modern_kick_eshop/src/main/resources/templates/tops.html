@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header-css">
+</head>
+
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<section class="content-section">
+  <div class="categories">
+    <div class="row g-3">
+      <tr th:each="product:${products}">
+        <div class="col">
+          <a th:href="tops">
+            <img th:src="..." class="card-img-top" alt th:text="${product.name}"></a>
+          <div class="item-body">
+            <h4 class="item-title"><td th:text="${product.name}"></td></h4>
+            <div class="price">
+              <em><span class="item-price">$<td th:text="${product.price}"></td></span></em>
+            </div>
+            <div class="buttons">
+              <form class="basket" th:object="${product}" method="POST" th:action="@{/addToCart}">
+                <fieldset>
+                  <div class ="sizepick">
+                    <span>Size: </span>
+                    <label><input type="radio" name="size" value="S" checked> S </label>
+                    <label><input type="radio" name="size" value="M"> M </label>
+                    <label><input type="radio" name="size" value="L"> L </label>
+                    </select>
+                  </div>
+                  <div class="inputwrap">
+                    <input type="hidden" name="id" th:value="${product.product_id}" />
+                    <span>Qty: </span>
+                    <input type="number" min="1" value="1" name="quantity"
+                           class="qty" placeholder="quantity" />
+                    <span class="unit">szt.</span>
+                    <p><button class="addToBasket" type="submit">ADD TO CART</button></p>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </tr>
+    </div>
+  </div>
+</section>
+
+</body>
+<div th:replace="fragments/footer"></div>
+
+
+

@@ -1,0 +1,136 @@
+/* HEADER */
+.navbar{
+    margin-bottom: 55px;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+#search-button {
+    margin-right: 20px;
+}
+.navbar {
+    padding-right: 20px;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 25px;
+    margin-top: 20px;
+}
+
+/* BLOG */
+.content {
+    height: 100%;
+    display: flex;
+    margin-top: 32px;
+    padding: 10px;
+    position: relative;
+}
+
+.content-left{
+    margin-bottom: 40px;
+}
+.home-articles {
+    padding: 20px;
+    position: relative;
+}
+
+.home-article {
+    display: flex;
+    margin: 25px;
+}
+
+.home-article img {
+    width: 300px;
+}
+
+.home-article-content {
+    align-self: center;
+    padding: 25px;
+}
+
+.home-article-content a {
+    text-decoration: none;
+    color: black;
+}
+
+/* SHOP */
+
+.card{
+    padding-bottom: 15px;
+}
+
+.categories{
+    padding: 20px;
+    margin-bottom: 55px;
+}
+
+h4{
+    font-style: oblique;
+}
+
+.col {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 25%;
+    margin: 5px;
+    text-align: center;
+    font-family: arial;
+}
+
+.addToBasket{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    margin-top: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.addToBasket:hover {
+    opacity: 0.7;
+}
+
+.qty{
+    width: 70px;
+}
+
+.price{
+    margin-bottom: 30px;
+}
+
+.card-title{
+    font-size: 20px;
+}
+
+/*TEAM*/
+.float-container {
+    text-align: center;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+
+.teamPhoto{
+    height: 400px;
+}
+
+/*AuthError*/
+
+.popup-content {
+    color: red;
+}

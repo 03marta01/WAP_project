@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header-css">
+</head>
+
+<body>
+<div th:replace="fragments/header :: header"></div>
+
+<div class="categories">
+<div class="row g-4">
+  <div class="col card">
+      <a th:href="@{/leggings}">
+          <img th:src="LEGINSY1.jpg" class="card-img-top" alt="leginsy"></a>
+      <div class="card-body">
+        <h5 class="card-title">Leggings</h5>
+    </div>
+  </div>
+
+  <div class="col card">
+      <a th:href="@{/tops}">
+        <img src="..." class="card-img-top" alt="..."></a>
+      <div class="card-body">
+        <h5 class="card-title">Tops & Sport Bras</h5>
+    </div>
+  </div>
+
+  <div class="col card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Accessories</h5>
+    </div>
+  </div>
+
+  <div class="col card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">xx</h5>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+<div th:replace="fragments/footer"></div>
+
+
+
+</html>

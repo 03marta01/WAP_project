@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <style>
+
+        .faq-heading{
+            border-bottom: #777;
+            padding: 10px 60px;
+        }
+        .faq-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .hr-line{
+            width: 65%;
+            margin: auto;
+        }
+        .faq-page {
+            color: #444;
+            cursor: pointer;
+            padding: 30px 20px;
+            width: 60%;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            margin: auto;
+        }
+        .active,
+        .faq-page:hover {
+            background-color: #F9F9F9;
+        }
+
+        .faq-page:after {
+            content: '\02795';
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+        .active:after {
+            content: "\2796";
+        }
+        .faq-body{
+            margin: auto;
+            width: 50%;
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+        }
+    </style>
+    <head th:replace="fragments/header :: header-css">
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+
+<main>
+    <h1 class="faq-heading">Have a question?</h1>
+    <h4 class="faq-heading">We might already have an answer!</h4>
+    <section class="faq-container">
+        <div class="faq-one">
+            <!-- question -->
+            <h2 class="faq-page">Where are your clothes made?</h2>
+            <!-- answer -->
+            <div class="faq-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div class="faq-two">
+            <!-- question -->
+            <h2 class="faq-page">What deliveries option do you offer?</h2>
+            <!-- answer -->
+            <div class="faq-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div class="faq-three">
+            <!-- question -->
+            <h2 class="faq-page">How can I pay?</h2>
+            <!-- answer -->
+            <div class="faq-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="faq-four">
+            <!-- question -->
+            <h2 class="faq-page">Can I return my order?</h2>
+            <!-- answer -->
+            <div class="faq-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </section>
+</main>
+<script th:src="@{main.js}"></script>
+
+<div th:replace="fragments/footer"></div>
+</body>
+</html>

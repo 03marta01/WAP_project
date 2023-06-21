@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header-css">
+</head>
+
+<body>
+<div th:replace="fragments/header :: header"></div>
+
+
+<div class="max-width-1 m-auto">
+  <hr />
+</div>
+<div class="m-auto content max-width-1">
+  <div class="content-left">
+    <h1>Want to gain some knowledge?</h1>
+    <p>
+      We are here to help you! Our specialists prepare articles every week
+      to keep you up to date with most recent research and help improve your
+      progress.
+    </p>
+  </div>
+</div>
+
+<div class="max-width-1 m-auto">
+  <hr />
+</div>
+<div class="home-articles max-width-1 m-auto  bg-light">
+  <h2>Articles</h2>
+  <div class="home-article">
+    <div class="home-article-img">
+      <img th:src="food.jpeg" alt="article" />
+    </div>
+    <div class="home-article-content">
+      <a href="#">
+        <h3>How to calculate energy requirements?</h3>
+      </a>
+      <div>By: Xyz Xyzzz | 17 May 2023</div>
+
+    </div>
+  </div>
+  <div class="home-article">
+    <div class="home-article-img">
+      <img th:src="gym.jpeg" alt="article" />
+    </div>
+    <div class="home-article-content">
+      <a href="#">
+        <h3>Sample push-pull-legs training plan</h3>
+      </a>
+      <div>By: Xxx Zzzz | 14 May 2023</div>
+
+    </div>
+  </div>
+  <div class="home-article">
+    <div class="home-article-img">
+      <img src="#" alt="article" />
+    </div>
+    <div class="home-article-content">
+      <a href="#">
+        <h3>Another article, another another</h3>
+      </a>
+
+      <div>By: Aut Hor | 06 May 2023 </div>
+
+    </div>
+  </div>
+
+
+</div>
+<div th:replace="fragments/footer"></div>
+
+</body>
+</html>

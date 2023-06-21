@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header-css">
+</head>
+
+<body>
+<div th:replace="fragments/header :: header"></div>
+
+    <div class="float-container">
+        <h1>Get to know us!</h1>
+        <div class="float-child">
+            <h2>Karolina</h2>
+            <img th:src="karolina_photo.jpg" alt="team-member1" class="teamPhoto"
+            />
+            <h4>Hi! My name is Karolina. I'm a fan of a healthy lifestyle and a gym freak ;) As you can see I'm also a cat lover.
+            I'm happy to be a part of ModernKick community as it empowers women to stay strong and confident during their sports activities
+                while also encourages them to lift heavy and become their best selves.</h4>
+        </div>
+        <div class="float-child">
+            <h2>Marta</h2>
+            <img th:src="marta_photo.jpeg" alt="team-member2" class="teamPhoto"
+            />
+            <h4>Hi! I'm Marta. I'm a huge enthusiast of volleyball, but I love other team sports too. I do love travelling, especially those
+                that I can be active!
+                I'm happy to be a team member of ModernKick eshop as it enables ladies to feel that they can do whatever they want and that
+                their bodies might do amazing things!</h4>
+        </div>
+    </div>
+
+<div th:replace="fragments/footer"></div>
+</body>
+
+</html>
